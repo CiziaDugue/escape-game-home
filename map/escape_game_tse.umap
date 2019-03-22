@@ -1,0 +1,222 @@
+{
+  "type": "umap",
+  "properties": {
+    "easing": true,
+    "embedControl": false,
+    "editinosmControl": false,
+    "fullscreenControl": true,
+    "locateControl": false,
+    "searchControl": false,
+    "datalayersControl": false,
+    "zoomControl": true,
+    "slideshow": {},
+    "captionBar": false,
+    "iconClass": "Drop",
+    "color": "Maroon",
+    "limitBounds": {
+      "south": 45.44909,
+      "west": 4.381067,
+      "north": 45.453884,
+      "east": 4.395722
+    },
+    "tilelayer": {
+      "minZoom": 0,
+      "maxZoom": 18,
+      "attribution": "Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&copy; OpenStreetMap contributors]], under ODbL.",
+      "url_template": "https://tile.jawg.io/dark/{z}/{x}/{y}.png?api-key=community",
+      "name": "OSM Dark (jawgmaps)",
+      "tms": false
+    },
+    "licence": "",
+    "description": "Le parcours de Théo",
+    "name": "Escape Game TSE",
+    "displayPopupFooter": false,
+    "miniMap": false,
+    "moreControl": false,
+    "scaleControl": true,
+    "scrollWheelZoom": true,
+    "zoom": 6
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2,
+      51
+    ]
+  },
+  "layers": [
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Amphithéâtre",
+            "description": "RDC"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387741,
+              45.45249
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Bâtiment A"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387107,
+              45.451807
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Bâtiment H de la Cité du Design"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387048,
+              45.450753
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Bibliothèque",
+            "description": "RDC"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387751,
+              45.452394
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Couloir de l’administration (I)",
+            "description": "1er Etage"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387611,
+              45.452259
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Couloir du BDE",
+            "description": "RDC"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387879,
+              45.452232
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Cour des matières"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.386967,
+              45.452198
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Foyer",
+            "description": "RDC"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387646,
+              45.452402
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Mixeur"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.386211,
+              45.449613
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Newsplex",
+            "description": "RDV"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.387423,
+              45.452123
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Serre de la Platine"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.385256,
+              45.450053
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Tour de la Cité du Design"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              4.385433,
+              45.450896
+            ]
+          }
+        }
+      ],
+      "_umap_options": {
+        "displayOnLoad": true,
+        "browsable": true,
+        "name": "Calque 1",
+        "id": 807177
+      }
+    }
+  ]
+}
