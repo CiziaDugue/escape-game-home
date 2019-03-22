@@ -85,7 +85,6 @@ img:hover {
 }
 
 .img-clue:hover {
-    /* transform: scale(1.5); */
     animation: shaker 0.5s linear infinite;
 }
 
@@ -122,7 +121,6 @@ p.content {
 p.wall-paint {
     display: none;
     font-family: 'Permanent Marker', cursive;
-    /* color: white; */
     font-size: 1.8rem;
     font-style: italic;
     transform: translate(35px, 65px) rotate(15deg);
@@ -169,6 +167,5 @@ p.wall-paint {
     background-color: white;
     text-align: center;
     padding-top: 20%;
-    /* filter: alpha(opacity=75); */
     opacity: 0.9;
 }
