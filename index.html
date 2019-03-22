@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Escape Game TSE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arizonia|Josefin+Sans|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="bg-main" class="container-fluid">
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+
+                <img id="camera" src="img/camera.png" alt="..." class="img-fluid w-75 m-auto img-clue">
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+
+                <p class="wall-paint" id="wp1">
+                    <span class="text-white">My</span><span class="text-white clue" id="clue1">s</span><span class="text-white">tère...</span>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+
+                <img id="newspaper" src="img/news-paper.png" alt="..." class="img-fluid w-75 m-auto img-clue">
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+
+                <img id="phone" src="img/telephone.png" alt="..." class="img-fluid w-75 m-auto img-clue">
+
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-12 grid-small">
+
+
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-12 grid-small">
+                        <p class="wall-paint" id="wp2">
+                            <span class="text-white">Dispari</span><span class="text-white clue" id="clue2">ti</span><span class="text-white">on...</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main" class="col-md-6 col-sm-12 col-xs-12 poster m-auto grid-big order-md-0 order-sm-first order-first">
+
+                <div id="clock-main" class="row">
+                    <div class="col-12">
+                        <h1 class="title text-center pt-4">Escape Game TSE</h1>
+                    </div>
+                    <div class="col-12">
+                        <img src="https://media.giphy.com/media/iAmlU4bgq66nC/giphy.gif" alt="..." class="poster-picture rounded img-fluid mx-auto mt-2 d-block">
+                    </div>
+                </div>
+
+                <div id="text-main" class="container">
+                    <div class="row justify-content-center align-items-center p-3">
+                        <p class="content text-center">En cette matinée du 21 septembre 2019, cinq valeureuses personnes s’agitent à Télécom Saint-Etienne… Et pour cause : Théo, leur colocataire lunaire mais irremplaçable, n’est pas rentré hier soir, ce
+                            qui n’est pas dans ses habitudes. Rencontre plaisante, fin de soirée arrosée, départ pour Bangkok… Les hypothèses s’enchaînent. Déterminés à avoir le fin mot de l’histoire, les cinq compères décident de partir à la recherche
+                            de leur ami. Le départ ? Télécom Saint-Etienne, où Théo a été aperçu pour la dernière fois. Leur quête les conduira, d’indices en énigmes, à traverser l’école et ses environs proches. Mais où est Théo ?
+                        </p>
+                    </div>
+                </div>
+
+                <div id="picture-main" class="row justify-content-center p-3">
+                    <div class="col-12">
+                        <img id="courtyard" src="img/cour-des-matieres-dark.jpg" alt="Télécom Saint-Etienne" class="img-fluid mx-auto mt-2 d-block">
+                    </div>
+                </div>
+
+                <div id="clue-main" class="row justify-content-center p-3">
+                    <div class="col-12">
+                        <h1 class="title text-center pt-4">Mais ou est passe Theo ...</h1>
+                    </div>
+                    <div class="col-12">
+                        <p class="content text-center">Vous trouverez des indices sur cette page.<br>Le mot de passe il vous faudra deviner.<br>"Dans l'ordre, nous permettons au monde de tourner rond... A l'envers, nous formons le numéro de téléphone à composer pour avancer..."</p>
+                    </div>
+                </div>
+
+                <div id="form-main" class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <h1 class="title text-center pt-4">Saisissez votre réponse</h1>
+                        <input type="text" id="password">
+                        <button id="submit" class="btn btn-secondary">?</button>
+                        <p id="link" class="content text-center">Bien joué! Mais l'aventure ne fait que <a href="/escape-game-wp">commencer...</a></p>
+                        <p id="wrong" class="content text-center">Raté... Mais n'oubliez pas que la réussite est affaire de constance.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-sm-6 col-12 grid-small">
+                        <p class="wall-paint" id="wp3">
+                            <span class="text-white clue" id="clue3">In</span><span class="text-white">dices...</span>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-12 grid-small">
+
+                        <img id="book" src="img/old-book.png" alt="..." class="img-fluid w-75 m-auto img-clue">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+
+                <img id="postcard" src="img/carte-postal.png" alt="..." class="postcard img-fluid w-75 m-auto img-clue">
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 grid-small">
+                <p class="wall-paint" id="wp4">
+                    <span class="text-white">Eni</span><span class="text-white clue" id="clue4">gm</span><span class="text-white">e...</span>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6  grid-small">
+
+                <img id="magnifier" src="img/loupe.png" alt="..." class="img-fluid w-75 m-auto img-clue">
+
+
+            </div>
+            <div class="col-md-3 col-sm-6 grid-small">
+                <div class="d-flex p-2 align-items-end grid-small">
+                    <a href="https://www.telecom-st-etienne.fr/" target="_blank">
+                        <img class="logo mx-2" src="img/logo-telecom.png" alt="Télécom Saint-Etienne">
+                    </a>
+                    <a href="https://iram.telecom-st-etienne.fr/" target="_blank">
+                        <img class="logo mx-2" src="img/logo-iram.png" alt="IRAM Saint-Etienne">
+                    </a>
+                    <a href="https://www.telecom-st-etienne.fr/formations/design-tech-academie-2/" target="_blank">
+                        <img class="logo mx-2" src="img/logo-dta.png" alt="Design Tech Académie Saint-Etienne">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="flash" class="flash-off"></div>
+
+        <audio id="clock-sound" preload="auto" autoplay loop>
+            <source src="audio/ticking.mp3">
+            </source>
+        </audio>
+
+        <audio id="thunder-sound" preload="auto">
+            <source src="audio/thunder.mp3">
+            </source>
+        </audio>
+
+        <audio id="spooky-sound" preload="auto">
+            <source src="audio/spooky.mp3">
+            </source>
+        </audio>
+
+        <audio id="flash-sound" preload="auto">
+            <source src="audio/camera-flash.mp3">
+            </source>
+        </audio>
+
+        <audio id="reveal-sound" preload="auto">
+            <source src="audio/reveal.mp3">
+            </source>
+        </audio>
+
+        <audio id="ringing-sound" preload="auto">
+            <source src="audio/ringing.mp3">
+            </source>
+        </audio>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

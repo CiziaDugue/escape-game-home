@@ -1,0 +1,174 @@
+@keyframes shaker {
+    from {
+        transform: translateX(0) scale(1.02);
+    }
+    25% {
+        transform: translateX(-3px) scale(1.02);
+    }
+    50% {
+        transform: translateX(0) scale(1.02);
+    }
+    75% {
+        transform: translateX(3px) scale(1.02);
+    }
+    100% {
+        transform: translateX(0) scale(1.02);
+    }
+}
+
+/* LAYOUT */
+* {
+    box-sizing: border-box;
+}
+
+div#bg-main {
+    background-image: url("../img/fond-acceuil.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+div.grid-big {
+    background-image: url("../img/parchemin-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95% 95%;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+    div#bg-main {
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100wh;
+        overflow: hidden;
+    }
+
+    div.grid-big {
+        height: 50vh;
+    }
+
+    div.grid-small {
+        height: 25vh;
+    }
+}
+
+@media handheld and (max-width: 640px) {
+    div#bg-main {
+        background-repeat: repeat-y;
+        background-size: contain;
+    }
+
+    div.grid-big {
+        min-height: 50vh;
+    }
+
+    div.grid-small {
+        max-height: 25vh;
+    }
+}
+
+/* IMAGES */
+img.poster-picture {
+    width: 200px;
+    height: 200px;
+    border: 1.5px solid black;
+    margin: auto;
+}
+
+img:hover {
+    cursor: help;
+}
+
+.img-clue {
+    transition-property: transform;
+	transition-timing-function: ease-in;
+}
+
+.img-clue:hover {
+    /* transform: scale(1.5); */
+    animation: shaker 0.5s linear infinite;
+}
+
+img.postcard {
+    transform: rotate(8deg) rotateZ(30deg);
+}
+
+img.logo {
+    width: auto;
+    height: 40px;
+}
+
+#picture-main {
+    display: none;
+}
+
+#courtyard {
+    max-height: 40vh;
+}
+
+/* TEXTS */
+h1.title {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p.content {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+p.wall-paint {
+    display: none;
+    font-family: 'Permanent Marker', cursive;
+    /* color: white; */
+    font-size: 1.8rem;
+    font-style: italic;
+    transform: translate(35px, 65px) rotate(15deg);
+}
+
+.clue {
+    display: inline;
+}
+
+.red-paint {
+    color: rgba(162, 3, 3, 0.89) !important;
+}
+
+#text-main, #link, #wrong, #clue-main {
+    display: none;
+}
+
+#link, #wrong {
+    margin: 5vh 5vw;
+}
+
+/* FORM */
+#form-main {
+    display: none;
+    max-width: 50%;
+}
+
+/* FLASH */
+.flash-off {
+    display: none;
+    visibility: hidden;
+}
+
+.flash-on {
+    overflow: hidden;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 20%;
+    /* filter: alpha(opacity=75); */
+    opacity: 0.9;
+}
